@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cataleg SYSTEM "cataleg.dtd">
+<cataleg>
+  <!-- Llista d'actors -->
+  <llista_actors>
+    <actor id="a1">
+      <nom>John Doe</nom>
+      <edat>40</edat>
+    </actor>
+    <actor id="a2">
+      <nom>Jane Smith</nom>
+      <edat>35</edat>
+    </actor>
+    <actor id="a3">
+      <nom>Tom Brown</nom>
+      <edat>50</edat>
+    </actor>
+  </llista_actors>
+
+  <!-- Llista de pel·lícules -->
+  <llista_pelicules>
+    <pelicula id="p1">
+      <titol idioma="en">Movie One</titol>
+      <director>Director A</director>
+      <any>2001</any>
+      <actors>
+        <actor_ref ref="a1"/>
+        <actor_ref ref="a2"/>
+      </actors>
+    </pelicula>
+    <pelicula id="p2">
+      <titol idioma="es">Película Dos</titol>
+      <director>Director B</director>
+      <any>2005</any>
+      <actors>
+        <actor_ref ref="a2"/>
+        <actor_ref ref="a3"/>
+      </actors>
+    </pelicula>
+    <pelicula id="p3">
+      <titol idioma="fr">Film Trois</titol>
+      <director>Director C</director>
+      <any>2010</any>
+      <actors>
+        <actor_ref ref="a1"/>
+        <actor_ref ref="a3"/>
+      </actors>
+    </pelicula>
+  </llista_pelicules>
+
+  <!-- Llista de recomanacions de pel·lícules -->
+  <llista_recomanacions_pelicules>
+    <recomanacio ref="p1"/>
+    <recomanacio ref="p2"/>
+    <recomanacio ref="p3"/>
+  </llista_recomanacions_pelicules>
+</cataleg>
